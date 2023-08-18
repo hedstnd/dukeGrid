@@ -5,9 +5,9 @@ var guesses = [];
 var grid = [["","",""],["","",""],["","",""]];
 window.onload = function() {
 	for (var i = 0; i < 3; i++) {
-		for (var j = 0; j < 3; j++) {
-			document.getElementById("_"+i+j).innerText = inp.arr[i][j];
-		}
+		// for (var j = 0; j < 3; j++) {
+			// document.getElementById("_"+i+j).innerText = inp.arr[i][j];
+		// }
 		document.getElementById("t"+i).innerText = inp.topNames[i];
 		document.getElementById("s"+i).innerText = inp.sideNames[i];
 	}
