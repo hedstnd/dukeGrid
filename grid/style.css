@@ -1,0 +1,128 @@
+
+.guess {
+	z-index: 2;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3rem;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+	width: 24rem;
+	height: 3rem;
+	font-size: 25px;
+}
+td {
+	width: 9rem;
+	height: 9rem;
+	background-color: rgba(44,44,44,0.4);
+}
+table {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3rem;
+	border-top-left-radius: 20px;
+}
+table tr:first-child td:first-child {
+  border-radius: 20px 0 0 0 !important;
+	background-color: rgba(0,0,0,0.1)
+}
+table tr:first-child td:last-child {
+  border-radius: 0 20px 0 0 !important;
+}
+table tr:last-child td:first-child {
+  border-radius: 0 0 0 20px !important;
+}
+table tr:last-child td:last-child {
+  border-radius: 0 0 20px 0 !important;
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+#boxes input {
+	border-radius: 15px;
+}
+
+.hasText {
+	border-radius: 15px 15px 0 0 !important;
+	z-index: 2;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3rem;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+	width: 24rem;
+	height: 3rem;
+	font-size: 25px;
+}
+
+#boxes ul {
+}
+#lst {
+	overflow: scroll;
+	z-index: 2;
+	width: 22rem;
+	max-height: 15rem;
+	border-radius: 0 0 15px 15px;
+	background-color: #d3d3d3;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 6.25rem;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+}
+.guessed {
+	background-color: rgba(255,225,255,0.4);
+	color: rgba(0,0,0,0.6);
+}
+.guessed::after {
+	content: "Already Used     ";
+	float: right;
+	display: flex;
+	padding-right: 1rem;
+}
+h1,h6 {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+h1 {
+	font-size: 85px;
+}
+h6 {
+	margin-top: -4rem;
+}
+button {
+	height: 100%;
+	width: 100%;
+	background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKzOHP3PeqrjL8ff88t2wlnBiLlMf5Gd_ozARSqvk_5A&s');
+	background-size: cover;
+}
+.correct {
+	background-color: #00ff00 !important;
+	/*background-image: none;*/
+	height: 8rem;
+}
+.name {
+	position: relative;
+	background-color: rgba(0,0,0,0.7);
+	color: #fff;
+	font-size: .75rem;
+	text-align: center;
+	margin-top: auto;
+	width: 9rem;
+	height: 1rem;
+	margin-left: 0px;
+	z-index: 1;
+	display: block;
+}
