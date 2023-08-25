@@ -41,6 +41,7 @@ table {
 </style>-->
 </head>
 <body>
+<span id="stat" onclick="stats()" hidden>📊</span>
 <div id="boxes">
 <input id="g00" class="guess" oninput="lookUp()" type="text" placeholder = "Search..." hidden><input id="g10" class="guess" oninput="lookUp()" type="text" placeholder="Search..." hidden><input id="g20" class="guess" oninput="lookUp()" type="text" placeholder="Search..." hidden>
 <input id="g01" class="guess" oninput="lookUp()" type="text" placeholder="Search..." hidden><input id="g11" class="guess" oninput="lookUp()" type="text" placeholder="Search..." hidden><input id="g21" class="guess" oninput="lookUp()" type="text" placeholder="Search..." hidden>
@@ -48,9 +49,16 @@ table {
 <table><tr><td></button></td><td id="t0"></td><td id="t1"></td><td id="t2"></td></tr>
 <tr><td id="s0"></td><td><button id="_00" onclick="popUp(0,0)"></button></td><td><button id="_10"onclick="popUp(1,0)"></button></td><td><button id="_20" onclick="popUp(2,0)"></button></td></tr>
 <tr><td id="s1"></td><td><button id="_01" onclick="popUp(0,1)"></button></td><td><button id="_11" onclick="popUp(1,1)"></button></td><td><button id="_21" onclick="popUp(2,1)"></button></td></tr>
-<tr><td id="s2"></td><td><button id="_02" onclick="popUp(0,2)"></button></td><td><button id="_12" onclick="popUp(1,2)"></button></td><td><button id="_22" onclick="popUp(2,2)"></button></td></tr>
-<div class = "modal" id = "m" onclick="hide()"></div>
-</table>
+<tr><td id="s2"></td><td><button id="_02" onclick="popUp(0,2)"></button></td><td><button id="_12" onclick="popUp(1,2)"></button></td><td><button id="_22" onclick="popUp(2,2)"></button></td></tr></table>
+<div class = "modal" id = "m" onclick="hide()">
+<div id="share" hidden><span id="close" onclick="closeOut()">&times;</span>
+<table id="finTable"><tr><td id="f00"></td><td id="f10"></td><td id="f20"></td></tr>
+<tr><td id="f01"></td><td id="f11"></td><td id="f21"></td></tr>
+<tr><td id="f02"></td><td id="f12"></td><td id="f22"></td></tr></table>
+<br/>
+<button id="sBut">Copy to Clipboard</button>
+</div>
+</div>
 <h1 id="gLeft">9</h1><h6>Guesses Remaining</h6>
 </body>
 </html>
