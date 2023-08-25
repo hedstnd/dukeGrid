@@ -8,15 +8,6 @@ var sT = "Duke Grid ";
 var exp;
 var clmn = ["x","y","z"];
 window.onload = function() {
-	getData().then((value) => {inp = value;
-		for (var i = 0; i < 3; i++) {
-		// for (var j = 0; j < 3; j++) {
-			// document.getElementById("_"+i+j).innerText = inp.arr[i][j];
-		// }
-			document.getElementById("t"+i).innerText = inp.topNames[i];
-			document.getElementById("s"+i).innerText = inp.sideNames[i];
-		}
-	});
 	d = new Date();
 	sT+= d.getMonth()+"/"+d.getDate();
 	d.setDate(d.getDate() + 1);
@@ -25,6 +16,15 @@ window.onload = function() {
 	d.setSeconds(0);
 	d.setMilliseconds(0);
 	exp = d.toUTCString();
+	getData().then((value) => {inp = value;
+		for (var i = 0; i < 3; i++) {
+		// for (var j = 0; j < 3; j++) {
+			// document.getElementById("_"+i+j).innerText = inp.arr[i][j];
+		// }
+			document.getElementById("t"+i).innerText = inp.topNames[i];
+			document.getElementById("s"+i).innerText = inp.sideNames[i];
+		}
+	}
 	if (document.cookie.length > 0) {
 		cooks = document.cookie.split("; ");
 		var cookObjs = new Object();
@@ -48,7 +48,7 @@ window.onload = function() {
 				}
 			}
 		}
-	}
+	});
 	
 }
 
