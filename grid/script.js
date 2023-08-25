@@ -8,7 +8,7 @@ var sT = "Duke Grid ";
 var exp;
 var clmn = ["x","y","z"];
 window.onload = function() {
-	inp = getData();
+	getData().then((value) => {inp = value;})
 	d = new Date();
 	sT+= d.getMonth()+"/"+d.getDate();
 	d.setDate(d.getDate() + 1);
