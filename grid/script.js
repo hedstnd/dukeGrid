@@ -24,7 +24,7 @@ window.onload = function() {
 			document.getElementById("t"+i).innerText = inp.topNames[i];
 			document.getElementById("s"+i).innerText = inp.sideNames[i];
 		}
-	}
+	
 	if (document.cookie.length > 0) {
 		cooks = document.cookie.split("; ");
 		var cookObjs = new Object();
@@ -48,7 +48,7 @@ window.onload = function() {
 				}
 			}
 		}
-	});
+	}});
 	
 }
 
