@@ -128,7 +128,7 @@ button {
 .correct {
 	background-color: #00ff00 !important;
 	/*background-image: none;*/
-	height: 8rem;
+	height: 5rem;
 }
 .name {
 	position: relative;
@@ -137,7 +137,7 @@ button {
 	font-size: .75rem;
 	text-align: center;
 	margin-top: auto;
-	width: 9rem;
+	width: 6rem;
 	height: 1rem;
 	margin-left: 0px;
 	z-index: 1;
