@@ -4,6 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no" />
 <script src="script.js"></script>
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 <!--<style>
 .guess {
 	z-index: 2;
@@ -42,7 +43,9 @@ table {
 </style>-->
 </head>
 <body>
-<span id="stat" onclick="stats()" hidden>📊</span>
+<span class="material-symbols-outlined" id="graph" onclick="stats()">
+bar_chart_4_bars
+</span>
 <div id="boxes">
 <input id="g00" class="guess" oninput="lookUp()" type="text" placeholder = "Search..." hidden><input id="g10" class="guess" oninput="lookUp()" type="text" placeholder="Search..." hidden><input id="g20" class="guess" oninput="lookUp()" type="text" placeholder="Search..." hidden>
 <input id="g01" class="guess" oninput="lookUp()" type="text" placeholder="Search..." hidden><input id="g11" class="guess" oninput="lookUp()" type="text" placeholder="Search..." hidden><input id="g21" class="guess" oninput="lookUp()" type="text" placeholder="Search..." hidden>

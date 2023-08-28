@@ -208,8 +208,14 @@ li {
 	h1, h6 {
 		color: #fff;
 	}
+	#graph {
+		color: #fff;
+	}
 }
 
 #t0,#t1,#t2,#s0,#s1,#s2 {
 	font-size: .75rem;
+}
+#graph {
+	color: #000;
 }
