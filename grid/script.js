@@ -161,7 +161,7 @@ function endGame() {
 	document.getElementById("g"+sRC[0]+sRC[1]).setAttribute("hidden","true");
 	document.getElementById("g"+sRC[0]+sRC[1]).value = "";
 	document.getElementById("lst").setAttribute("hidden","true");
-	document.getElementById("stat").removeAttribute("hidden");
+	document.getElementById("graph").removeAttribute("hidden");
 	document.getElementById("sBut").setAttribute("onclick","copy()");
 	document.getElementById("res").innerHTML = "<h2>"+correct.length+"/9</h2><h4>Try the Duke Grid again tomorrow!</h4>";
 }
