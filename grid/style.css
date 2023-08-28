@@ -183,11 +183,12 @@ li {
 	margin-right: auto;
 	/*display: none;*/
 }
-#stat {
+#graph {
 	float: right;
 	top: 1em;
 	right: 1em;
 	position: fixed;
+	color: #012169;
 }
 
 #sBut {
@@ -215,7 +216,4 @@ li {
 
 #t0,#t1,#t2,#s0,#s1,#s2 {
 	font-size: .75rem;
-}
-#graph {
-	color: #000;
 }
