@@ -9,7 +9,7 @@ var exp;
 var clmn = ["x","y","z"];
 window.onload = function() {
 	d = new Date();
-	sT+= d.getMonth()+"/"+d.getDate();
+	sT+= (d.getMonth()+1)+"/"+d.getDate();
 	d.setDate(d.getDate() + 1);
 	d.setHours(0);
 	d.setMinutes(0);
