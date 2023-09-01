@@ -138,7 +138,7 @@ button {
 	font-size: .625rem;
 	text-align: center;
 	margin-top: auto;
-	width: 6rem;
+	/*width: 6rem;*/
 	height: 1rem;
 	margin-left: 0px;
 	z-index: 1;
